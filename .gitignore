@@ -1,4 +1,4 @@
-venv/
+venv
 
 *.py[cod]
 # 
@@ -37,5 +37,6 @@ pip-log.txt
 .project
 .pydevproject
 .DS_Store
+.pylintrc
 
 *.codekit
