@@ -1,0 +1,14 @@
+application: t8-restapi-py
+runtime: python27
+version: 1
+api_version: 1
+threadsafe: true
+
+skip_files:
+- ^(.*/)?#.*#$
+- ^env/.*
+- ^scripts/.*
+
+handlers:
+- url: .*
+  script: main.app

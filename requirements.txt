@@ -1,0 +1,11 @@
+Flask==0.10.1
+Flask-JSONRPC==0.2
+Jinja2==2.7.2
+MarkupSafe==0.23
+Werkzeug==0.9.4
+djangoappengine==1.6.2
+djangotoolbox==1.6.2
+itsdangerous==0.24
+linkenv==0.1.0
+six==1.6.1
+wsgiref==0.1.2
