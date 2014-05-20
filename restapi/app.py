@@ -86,7 +86,7 @@ def RestaurantDetail_Retrieve():
 @jsonrpc.method('RestaurantDetail.Update(Title=str, Details=str, Tags=list, Regions=list) -> Object')
 def RestaurantDetail_Update(Title=None, Details=None, Tags=None, Regions=None):
     """ Updates the restaurant details """
-    RESTAURANT_UID = "@test-mcdonalds"
+
     restaurant = None
     for restaurant in models.Restaurant.all().filter("Uid =", RESTAURANT_UID):
         break

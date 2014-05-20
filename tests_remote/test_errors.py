@@ -1,9 +1,15 @@
-# /usr/bin/env python
+#!/usr/bin/env python
+import sys
 import urllib2
 import json
 from _test import *
+import time
 
-api = SimpleJsonRPCClient(SERVICE_ENDPOINT)
+endpoint = SERVICE_ENDPOINT
+if len(sys.argv) > 1:
+    endpoint = sys.argv[1]
+
+api = SimpleJsonRPCClient(endpoint)
 
 
 # HTTP GET call is invalid (in fact, ANYTHING but HTTP POST )
